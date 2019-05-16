@@ -12,11 +12,11 @@
     Title :<input type="text" th:field="*{title}" />
     <span th:if="${#fields.hasErrors('title')}"
           th:errors="*{title}"></span><br />
-    Employer :<input type="text" th:fields="*{employer}" />
+    Employer :<input type="text" th:field="*{employer}" />
     <span th:if="${#fields.hasErrors('employer')}"
           th:errors="*{employer}"></span><br />
-    Description :<textarea row="3" th:fields="*{description}" />
-    <span th:if="${#fields.hasErrors('description'}"
+    Description :<textarea row="3" th:field="*{description}" />
+    <span th:if="${#fields.hasErrors('description')}"
           th:errors="*{description}"></span>
     <br />
     <input type="submit" value="Submit" />
